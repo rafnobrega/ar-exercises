@@ -13,5 +13,5 @@ puts "Total annual revenue: #{@sum}"
 @average = Store.average(:annual_revenue)
 puts "Average annual revenue: #{@average}"
 
-@richStores = Store.where("annual_revenue > 1000000").count
-puts "Number of stores with annual revenue > 1M: #{@richStores}"
+@profitable_stores = Store.where("annual_revenue > 1000000").count
+puts "Number of stores with annual revenue > 1M: #{@profitable_stores}"
